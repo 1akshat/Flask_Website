@@ -1,0 +1,215 @@
+{% extends("header.html") %}
+
+{% block body %}
+    <div>
+
+      <!-- Nav tabs -->
+      <ul class="nav nav-tabs" role="tablist">
+        <li role="presentation" class="active"><a href="#basics" aria-controls="dan" role="tab" data-toggle="tab">Basics</a></li>
+        <li role="presentation"><a href="#pygame" aria-controls="dan" role="tab" data-toggle="tab">PyGame</a></li>
+        <li role="presentation"><a href="#pyogl" aria-controls="dan" role="tab" data-toggle="tab">PyOpenGL</a></li>
+        <li role="presentation"><a href="#kivy" aria-controls="dan" role="tab" data-toggle="tab">Kivy</a></li>
+        <li role="presentation"><a href="#pyqt" aria-controls="dan" role="tab" data-toggle="tab">PyQt</a></li>
+        <li role="presentation"><a href="#fnc" aria-controls="dan" role="tab" data-toggle="tab">Finance</a></li>
+        <li role="presentation"><a href="#flask" aria-controls="dan" role="tab" data-toggle="tab">Flask</a></li>
+        <li role="presentation"><a href="#django" aria-controls="dan" role="tab" data-toggle="tab">Django</a></li>
+        <li role="presentation"><a href="#mysql" aria-controls="dan" role="tab" data-toggle="tab">MySQL</a></li>
+        <li role="presentation"><a href="#sqlt" aria-controls="dan" role="tab" data-toggle="tab">SQLite</a></li>
+        <li role="presentation"><a href="#dataman" aria-controls="dan" role="tab" data-toggle="tab">Data Manipulation</a></li>
+        <li role="presentation"><a href="#datavis" aria-controls="dan" role="tab" data-toggle="tab">Data Visualization</a></li>
+        <li role="presentation"><a href="#nltk" aria-controls="dan" role="tab" data-toggle="tab">Natural Language Processing with NLTK</a></li>
+        <li role="presentation"><a href="#svm" aria-controls="dan" role="tab" data-toggle="tab">Support Vector Machines (SVM)</a></li>
+        <li role="presentation"><a href="#clustering" aria-controls="dan" role="tab" data-toggle="tab">Clustering (unsupervised learning)</a></li>
+        <li role="presentation"><a href="#imgrecog" aria-controls="dan" role="tab" data-toggle="tab">Image Recognition</a></li>
+        <li role="presentation"><a href="#forex" aria-controls="dan" role="tab" data-toggle="tab">Forex Algo HFT</a></li>
+        <li role="presentation"><a href="#robotics" aria-controls="dan" role="tab" data-toggle="tab">Robotics with the Raspberry Pi</a></li>
+        <li role="presentation"><a href="#supercomputer" aria-controls="dan" role="tab" data-toggle="tab">Build a Supercomputer and program with MPI</a></li>
+        <li role="presentation"><a href="#tkinter" aria-controls="dan" role="tab" data-toggle="tab">Tkinter</a></li>
+        <li role="presentation"><a href="#pyandpandas" aria-controls="dan" role="tab" data-toggle="tab">Python and Pandas with Sentiment Analysis Database</a></li>
+        <li role="presentation"><a href="#mcsimulator" aria-controls="dan" role="tab" data-toggle="tab">Creating a Monte Carlo simulator</a></li>
+        <li role="presentation"><a href="#ibpy" aria-controls="dan" role="tab" data-toggle="tab">IBpy</a></li>
+        <li role="presentation"><a href="#fundamentalinvest" aria-controls="dan" role="tab" data-toggle="tab">Programming for Fundamental Investing</a></li>
+        <li role="presentation"><a href="#virtualprivateserver" aria-controls="dan" role="tab" data-toggle="tab">Virtual Private Server Basics</a></li>
+      </ul>
+
+      <!-- Tab panes -->
+      <div class="tab-content">
+          <div role="tabpanel" class="tab-pane fade in active" id="basics">
+              <ul>
+                   {% for t in TOPIC_DICT["Basics"] %}
+                     <li><a href="{{t[1]}}">{{t[0]}}</a></li>
+                   {% endfor %}
+              </ul>
+          </div>
+          <div role="tabpanel" class="tab-pane fade" id="pygame">
+              <ul>
+                  {% for t in TOPIC_DICT["PyGame"] %}
+                     <li><a href="{{t[1]}}">{{t[0]}}</a></li>
+                   {% endfor %}
+              </ul>
+          </div>
+          <div role="tabpanel" class="tab-pane fade" id="pyogl">
+              <ul>
+                  {% for t in TOPIC_DICT["PyOpenGL"] %}
+                     <li><a href="{{t[1]}}">{{t[0]}}</a></li>
+                   {% endfor %}
+              </ul>
+          </div>
+          <div role="tabpanel" class="tab-pane fade" id="kivy">
+              <ul>
+                  {% for t in TOPIC_DICT["Kivy"] %}
+                     <li><a href="{{t[1]}}">{{t[0]}}</a></li>
+                   {% endfor %}
+              </ul>
+          </div>
+          <div role="tabpanel" class="tab-pane fade" id="pyqt">
+              <ul>
+                  {% for t in TOPIC_DICT["PyQt"] %}
+                     <li><a href="{{t[1]}}">{{t[0]}}</a></li>
+                   {% endfor %}
+              </ul>
+          </div>
+          <div role="tabpanel" class="tab-pane fade" id="fnc">
+              <ul>
+                  {% for t in TOPIC_DICT["Finance"] %}
+                     <li><a href="{{t[1]}}">{{t[0]}}</a></li>
+                   {% endfor %}
+              </ul>
+          </div>
+          <div role="tabpanel" class="tab-pane fade" id="flask">
+              <ul>
+                  {% for t in TOPIC_DICT["Flask"] %}
+                     <li><a href="{{t[1]}}">{{t[0]}}</a></li>
+                   {% endfor %}
+              </ul>
+          </div>
+          <div role="tabpanel" class="tab-pane fade" id="django">
+              <ul>
+                  {% for t in TOPIC_DICT["Django"] %}
+                     <li><a href="{{t[1]}}">{{t[0]}}</a></li>
+                   {% endfor %}
+              </ul>
+          </div>
+          <div role="tabpanel" class="tab-pane fade" id="mysql">
+              <ul>
+                  {% for t in TOPIC_DICT["MySQL"] %}
+                     <li><a href="{{t[1]}}">{{t[0]}}</a></li>
+                   {% endfor %}
+              </ul>
+          </div>
+          <div role="tabpanel" class="tab-pane fade" id="sqlt">
+              <ul>
+                  {% for t in TOPIC_DICT["SQLite"] %}
+                     <li><a href="{{t[1]}}">{{t[0]}}</a></li>
+                   {% endfor %}
+              </ul>
+          </div>
+          <div role="tabpanel" class="tab-pane fade" id="dataman">
+              <ul>
+                  {% for t in TOPIC_DICT["Data Manipulation"] %}
+                     <li><a href="{{t[1]}}">{{t[0]}}</a></li>
+                   {% endfor %}
+              </ul>
+          </div>
+          <div role="tabpanel" class="tab-pane fade" id="datavis">
+              <ul>
+                  {% for t in TOPIC_DICT["Data Visualization"] %}
+                     <li><a href="{{t[1]}}">{{t[0]}}</a></li>
+                   {% endfor %}
+              </ul>
+          </div>
+          <div role="tabpanel" class="tab-pane fade" id="nltk">
+              <ul>
+                  {% for t in TOPIC_DICT["Natural Language Processing with NLTK"] %}
+                     <li><a href="{{t[1]}}">{{t[0]}}</a></li>
+                   {% endfor %}
+              </ul>
+          </div>
+          <div role="tabpanel" class="tab-pane fade" id="svm">
+              <ul>
+                  {% for t in TOPIC_DICT["Support Vector Machines (SVM)"] %}
+                     <li><a href="{{t[1]}}">{{t[0]}}</a></li>
+                   {% endfor %}
+              </ul>
+          </div>
+          <div role="tabpanel" class="tab-pane fade" id="clustering">
+              <ul>
+                  {% for t in TOPIC_DICT["Clustering (unsupervised learning)"] %}
+                     <li><a href="{{t[1]}}">{{t[0]}}</a></li>
+                   {% endfor %}
+              </ul>
+          </div>
+          <div role="tabpanel" class="tab-pane fade" id="imgrecog">
+              <ul>
+                  {% for t in TOPIC_DICT["Image Recognition"] %}
+                     <li><a href="{{t[1]}}">{{t[0]}}</a></li>
+                   {% endfor %}
+              </ul>
+          </div>
+          <div role="tabpanel" class="tab-pane fade" id="forex">
+              <ul>
+                  {% for t in TOPIC_DICT["Forex Algo HFT"] %}
+                     <li><a href="{{t[1]}}">{{t[0]}}</a></li>
+                   {% endfor %}
+              </ul>
+          </div>
+          <div role="tabpanel" class="tab-pane fade" id="robotics">
+              <ul>
+                  {% for t in TOPIC_DICT["Robotics with the Raspberry Pi"] %}
+                     <li><a href="{{t[1]}}">{{t[0]}}</a></li>
+                   {% endfor %}
+              </ul>
+          </div>
+          <div role="tabpanel" class="tab-pane fade" id="supercomputer">
+              <ul>
+                  {% for t in TOPIC_DICT["Build a Supercomputer and program with MPI"] %}
+                     <li><a href="{{t[1]}}">{{t[0]}}</a></li>
+                   {% endfor %}
+              </ul>
+          </div>
+          <div role="tabpanel" class="tab-pane fade" id="tkinter">
+              <ul>
+                  {% for t in TOPIC_DICT["Tkinter"] %}
+                     <li><a href="{{t[1]}}">{{t[0]}}</a></li>
+                   {% endfor %}
+              </ul>
+          </div>
+          <div role="tabpanel" class="tab-pane fade" id="pyandpandas">
+              <ul>
+                  {% for t in TOPIC_DICT["Python and Pandas with Sentiment Analysis Database"] %}
+                     <li><a href="{{t[1]}}">{{t[0]}}</a></li>
+                   {% endfor %}
+              </ul>
+          </div>
+          <div role="tabpanel" class="tab-pane fade" id="mcsimulator">
+              <ul>
+                  {% for t in TOPIC_DICT["Creating a Monte Carlo simulator"] %}
+                     <li><a href="{{t[1]}}">{{t[0]}}</a></li>
+                   {% endfor %}
+              </ul>
+          </div>
+          <div role="tabpanel" class="tab-pane fade" id="ibpy">
+              <ul>
+                  {% for t in TOPIC_DICT["IBpy"] %}
+                     <li><a href="{{t[1]}}">{{t[0]}}</a></li>
+                   {% endfor %}
+              </ul>
+          </div>
+          <div role="tabpanel" class="tab-pane fade" id="fundamentalinvest">
+              <ul>
+                  {% for t in TOPIC_DICT["Programming for Fundamental Investing"] %}
+                     <li><a href="{{t[1]}}">{{t[0]}}</a></li>
+                   {% endfor %}
+              </ul>
+          </div>
+          <div role="tabpanel" class="tab-pane fade" id="virtualprivateserver">
+              <ul>
+                  {% for t in TOPIC_DICT["Virtual Private Server Basics"] %}
+                     <li><a href="{{t[1]}}">{{t[0]}}</a></li>
+                   {% endfor %}
+              </ul>
+          </div>
+      </div>
+
+    </div>
+{% endblock %}
